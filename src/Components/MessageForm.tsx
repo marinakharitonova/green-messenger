@@ -23,9 +23,9 @@ const MessageForm = ({chatId}: NewMessageFormProps) => {
         forceUpdate({});
     }, []);
 
-    const onFinish = (values: any) => {
+    const onFinish = async (values: any) => {
         try {
-            send({
+            await send({
                 idInstance,
                 apiTokenInstance,
                 message: values.message,

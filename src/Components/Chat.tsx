@@ -26,15 +26,13 @@ function Chat() {
         if (isSuccess && data) {
             const receiptId = data.receiptId
 
-            try {
-                deleteNotification({
-                    idInstance: idInstance,
-                    apiTokenInstance: apiTokenInstance,
-                    receiptId
-                }).unwrap()
-            } catch (e) {
-                console.log(e);
-            }
+            deleteNotification({
+                idInstance: idInstance,
+                apiTokenInstance: apiTokenInstance,
+                receiptId
+            })
+                .unwrap()
+                .catch(e => console.log(e))
 
         }
     }, [isSuccess, data, deleteNotification, apiTokenInstance, idInstance])
