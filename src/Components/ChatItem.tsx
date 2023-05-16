@@ -12,7 +12,7 @@ function ChatItem({chatId, handleChatChange}: ChatItemProps) {
     }
 
     return (
-        <li onClick={handleClick} style={{padding: '8px 0', borderBottom: '1px solid #ededed'}}>
+        <li onClick={handleClick} style={{padding: '8px 0', borderBottom: '1px solid #ededed', cursor: 'pointer'}}>
             {chatId.match(/\d+/)}
         </li>
     );
