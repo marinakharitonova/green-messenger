@@ -7,4 +7,4 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000/green-messenger]([http://localhost:3000](http://localhost:3000/green-messenger)) to view it in the browser.
+Open [http://localhost:3000/green-messenger](http://localhost:3000/green-messenger) to view it in the browser.
