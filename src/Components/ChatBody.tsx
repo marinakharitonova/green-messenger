@@ -12,6 +12,8 @@ function ChatBody({chatId}: { chatId: string }) {
 
     return (
         <div style={{
+            maxHeight: 'calc(100vh - 140px)',
+            overflow: 'auto',
             display: 'grid',
             gridTemplateColumns: '1fr',
             gridGap: '8px',

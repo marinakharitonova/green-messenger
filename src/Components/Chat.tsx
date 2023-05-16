@@ -75,7 +75,7 @@ function Chat() {
 
                 <ChatBody chatId={chatId}/>
 
-                <MessageForm chatId={chatId}/>
+                <MessageForm chatId={chatId} key={chatId}/>
             </div>
         </div>
     );
