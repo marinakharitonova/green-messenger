@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/green-messenger/static/css/main.fa333a85.css",
+    "main.js": "/green-messenger/static/js/main.84b4302d.js",
+    "static/js/787.cbf3700f.chunk.js": "/green-messenger/static/js/787.cbf3700f.chunk.js",
+    "index.html": "/green-messenger/index.html",
+    "main.fa333a85.css.map": "/green-messenger/static/css/main.fa333a85.css.map",
+    "main.84b4302d.js.map": "/green-messenger/static/js/main.84b4302d.js.map",
+    "787.cbf3700f.chunk.js.map": "/green-messenger/static/js/787.cbf3700f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa333a85.css",
+    "static/js/main.84b4302d.js"
+  ]
+}
