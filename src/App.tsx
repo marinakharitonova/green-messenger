@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Login from "./Components/Login";
+import {useAppSelector} from "./features/store";
+import {selectIdInstance} from "./features/auth/authSlice";
+import Chat from "./Components/Chat";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const idInstance = useAppSelector(selectIdInstance)
+
+    return (
+        <div style={{background: '#ededed', padding: '30px 0'}}>
+
+            {
+                !idInstance && <Login/>
+            }
+
+
+            {
+                idInstance !== 0 && <Chat/>
+            }
+        </div>
+    );
 }
 
 export default App;
