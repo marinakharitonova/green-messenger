@@ -39,7 +39,7 @@ const MessageForm = ({chatId}: NewMessageFormProps) => {
     }
 
     const isBtnDisabled = () => {
-        return !form.getFieldsValue(true).message
+        return !form.getFieldsValue(true).message || !chatId
     }
 
     return (
